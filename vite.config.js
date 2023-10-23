@@ -4,4 +4,12 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [],
   base: "/locadora/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: ('./index.html'),
+        admin: ('./admin.html'),
+      }
+    }
+  }
 });

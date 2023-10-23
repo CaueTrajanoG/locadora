@@ -23,7 +23,6 @@ function remove() {
   let data = JSON.parse(localStorage.getItem("@cars"));
   for (let i = 0; i < data.length; i++) {
     if (id == data[i].id) {
-      console.log(data[i].nome + " será removido");
       data.splice(i, 1);
       localStorage.setItem("@cars", JSON.stringify(data));
     }
