@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <title>Admin</title>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-600">
     <header>
-      <nav class="bg-green-600 p-4 w-100">
+      <nav class="bg-green-600 p-4">
         <div class="container mx-auto flex justify-between items-center">
           <div>
             <a href="index.html" class="text-white text-3xl font-bold">EcoWay</a>
@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main class=" flex flex-col items-center">    
-      <div class="container flex flex-col items-center border-4 m-5 border-gray-500 rounded-lg">
+      <div class="container flex flex-col items-center border-4 m-3 rounded-lg">
         <h1 class="text-center text-2xl my-12 font-bold">CRUD</h1>
         <div class="inputs">
           <input type="text" id="FabField" placeholder="Marca" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -31,17 +31,16 @@
           <button id="addButton" type="button" class="inline-flex items-center rounded-md bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-200">Adicionar</button>
         </div>
       </div>
-      <div class="border-4 p-3 border-gray-500 rounded-lg">
+      <div class="border-4 p-3 rounded-lg">
         <input type="text" id="idField" placeholder="id para deletar" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-200">
-        <button id="deleteButton" type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">Deletar</button>
+        <button id="deleteButton" type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">Remover</button>
       </div> 
       <div class="mt-5">
         <a href="index.html">
           <button type="button" class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">Página Inicial</button>
         </a>
-
       </div>
     </main>
-    <script type="module" src="./js/services/storage.js"></script>
+    <script type="module" src="./js/admin.js"></script>
   </body>
 </html>
